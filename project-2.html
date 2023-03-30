@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        *{
+            padding: 0;margin: 0;
+        }
+        body{
+            background-color: rgb(134, 36, 187);
+            height: 1000px;
+        }
+        .form1 {
+            background-color: rgba(255, 255, 255, 0.466);
+            width: 40vw;
+            height: 975px;
+            margin: auto;
+            margin-top: 20px;
+            border: 5px solid rgba(255, 255, 255, 0.584);
+            border-radius: 20px;
+            box-shadow: 0px 0px 50px black;
+            background-image: url("./959740.jpg");
+            background-position: 28%;
+            background-size: 1727px; 
+        }
+        .form1 h1 {
+            margin-left: 40px;
+            padding-top: 25px;
+            color: #a400bb;
+            text-shadow: 4px 2px 19px #552955;
+            font-family: cursive;
+        }
+        .form1 label{
+            font-size: 27px;
+            margin-right: 22px;
+            margin-left: 16px;
+        }
+        .form1 input{
+            height: 30px;
+            width: 353px;
+            margin-top: 9px;
+            border-radius: 5px;
+            border: 1px solid #9e9e9e;
+        }
+        .form1 .radioBtn{
+            width:20px;
+            height: 15px;
+            margin-top: 0px;
+            margin-left: 48px;
+        }
+        .form1 .radioLbl{
+            margin-left: 0px;
+            font-size: 20px;
+        }
+        .box {
+            height: 51px;
+            background-color: rgba(255, 255, 255, 0.349);
+            width: 33vw;
+            /* margin-left: 5vw; */
+            margin-top: 5px;
+            border: 1px solid white;
+            border-radius: 5px;
+            margin: auto;
+            margin-bottom: 6px;
+            box-shadow: -2px -1px 4px black;
+        }
+        #box1 ,#box4 ,#box7 {
+            margin-top: 20px;
+        }
+        #box4{
+            height: 90px;
+            display: flex;
+        }
+        #box7{
+            height: 60px;
+        }
+        #box10 input,#box9 input,#box8 input{
+            width: 295px;
+        }
+        .form1 .btnSec button {
+            height: 50px;
+            width: 136px;
+            border: none;
+            border-radius: 25px;
+            margin-right: 15px;
+            margin-top: 10px;
+            background-color: rgba(255, 255, 255, 0.466);
+            border:2px solid white;
+            box-shadow: -2px -1px 4px black;
+            font-size: 20px;
+            font-family: cursive;
+        }
+        .btnSec #clrBtn{
+            margin-left: 273px;
+        }
+        .btn:hover{
+            color: red;
+            
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="form1">
+            <h1>Step 1: Your details</h1>
+            <div class="box" id="box1">
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="First and last name">
+            </div>
+            <div class="box">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="example@domain.com" id="">
+            </div>
+            <div class="box">
+                <label for="phone">Phone</label>
+                <input type="number" name="phone" placeholder="Eg. +91 9870000009">
+            </div>
+            <h1>Step 2: Delivery address</h1>
+            <div class="box" id="box4">
+                <div><label for="address">Address</label></div>
+                <div><textarea name="address" id="add" cols="30" rows="5"></textarea></div>
+            </div>
+            <div class="box">
+                <label for="Pin">Post code</label>
+                <input type="number" name="pin" id="">
+            </div>
+            <div class="box">
+                <label for="country">Country</label>
+                <select name="country" id="">
+                    <option value="Ind">India</option>
+                    <option value="Jap">Japan</option>
+                    <option value="Kr">Korea</option>
+                    <option value="Ch">China</option>
+                    <option value="Rus">Russia</option>
+                </select>
+            </div>
+            <h1>Step 3: Card details</h1>
+            <div class="box" id="box7">
+                <div><label for="cardType">Card type</label></div>
+                <div>
+                    <input class="radioBtn" type="radio" name="cardType"> <label class="radioLbl" for="cardType">VISA</label>
+                    <input class="radioBtn" type="radio" name="cardType"> <label class="radioLbl" for="cardType">AmEx</label>
+                    <input class="radioBtn" type="radio" name="cardType"> <label class="radioLbl" for="cardType">Mastercard</label>
+                </div>
+
+            </div>
+            <div class="box" id="box8">
+                <label for="cardno.">Card number</label>
+                <input type="text">
+            </div>
+            <div class="box" id="box9">
+                <label for="cardpin">Security code</label>
+                <input type="number" name="" id="">
+            </div>
+            <div class="box" id="box10">
+                <label for="nameOnCard">Name on card</label>
+                <input type="text" name="nameOnCard" id="">
+            </div>
+            <div class="btnSec">
+                <button id="clrBtn" class="btn" type="reset">Clear All</button>
+                <button id="subBtn" class="btn" type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
