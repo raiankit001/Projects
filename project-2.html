@@ -1,169 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms</title>
+    <title>Joining Form | welcome</title>
+    <link rel="icon" href="./assets-form2/straw-hat.png">
     <style>
         *{
-            padding: 0;margin: 0;
+                padding: 0;margin: 0;
         }
         body{
-            background-color: rgb(134, 36, 187);
-            height: 1000px;
+                width: 100%;
+                background-color: rgb(255, 205, 205);
         }
-        .form1 {
-            background-color: rgba(255, 255, 255, 0.466);
-            width: 40vw;
-            height: 975px;
-            margin: auto;
-            margin-top: 20px;
-            border: 5px solid rgba(255, 255, 255, 0.584);
-            border-radius: 20px;
-            box-shadow: 0px 0px 50px black;
-            background-image: url("imgs/pro-2(img).jpg");
-            background-position: 28%;
-            background-size: 1727px; 
+        .sform{
+                background-image:url(./assets-form2/pro-2\(img\).jpg);
+                background-position: 40% 1%;
+                width: 60%;
+                border-radius: 30px;
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                margin-top: 30px;
+                justify-content: center;
+                /* align-items: center; */
+                padding: 30px;
+                margin-bottom: 30px;
+                box-shadow: 10px 10px 10px ;
         }
-        .form1 h1 {
-            margin-left: 40px;
-            padding-top: 25px;
-            color: #a400bb;
-            text-shadow: 4px 2px 19px #552955;
-            font-family: cursive;
+        #fhead{
+                font-family: cursive;
+                display: flex;
+                justify-content: center;
+                font-size: 50px;
+                text-shadow: 0px 0px 5px red;
+                margin-bottom: 20px;
         }
-        .form1 label{
-            font-size: 27px;
-            margin-right: 22px;
-            margin-left: 16px;
+        .box{
+                height: 50px;
+                display: flex;
+                align-items: center;
+                
         }
-        .form1 input{
-            height: 30px;
-            width: 353px;
-            margin-top: 9px;
-            border-radius: 5px;
-            border: 1px solid #9e9e9e;
+        .box input{
+                /* box-shadow: 0ppx 5px black; */
+                border: 1px sold rgb(213, 213, 213);
+                border-radius: 10px;
+                /* background-color: rgba(255, 255, 255, 0.281); */
         }
-        .form1 .radioBtn{
-            width:20px;
-            height: 15px;
-            margin-top: 0px;
-            margin-left: 48px;
+        .box10 input, .box11 input, .box12 input, .box13 input{
+                background-color: rgba(255, 255, 255, 0.283);
         }
-        .form1 .radioLbl{
-            margin-left: 0px;
-            font-size: 20px;
+        .box label, .box input{
+                text-shadow: 0px 0px 3px white;
+
+                /* display: flex; */
+                margin-left: 10px;
+                font-size: 24px;
+                font-family: Arial;
         }
-        .box {
-            height: 51px;
-            background-color: rgba(255, 255, 255, 0.349);
-            width: 33vw;
-            /* margin-left: 5vw; */
-            margin-top: 5px;
-            border: 1px solid white;
-            border-radius: 5px;
-            margin: auto;
-            margin-bottom: 6px;
-            box-shadow: -2px -1px 4px black;
+        .box15{
+                display: flex;
+                justify-content: center;
+                margin-bottom:40px
         }
-        #box1 ,#box4 ,#box7 {
-            margin-top: 20px;
+        .box14 input{
+                border: none;
+                font-family: cursive;
+                font-size: 16px;
+                text-shadow: 0px 0px 5px red;
         }
-        #box4{
-            height: 90px;
-            display: flex;
+        .box15 button{
+                font-size: 30px;
+                border: none;
+                margin: 10px;
+                border-radius: 10px;
+                padding: 5px;
+                box-shadow: 2px 2px 5px black;
+                font-family: cursive;
+                transition-property: font-size;
+                transition-duration: 2s;
         }
-        #box7{
-            height: 60px;
+        .box15 button:hover{
+                font-size: 35px;
         }
-        #box10 input,#box9 input,#box8 input{
-            width: 295px;
+        #rbtn{
+                background-color: rgb(223, 223, 132);
         }
-        .form1 .btnSec button {
-            height: 50px;
-            width: 136px;
-            border: none;
-            border-radius: 25px;
-            margin-right: 15px;
-            margin-top: 10px;
-            background-color: rgba(255, 255, 255, 0.466);
-            border:2px solid white;
-            box-shadow: -2px -1px 4px black;
-            font-size: 20px;
-            font-family: cursive;
+        #sbtn{
+                position: relative;
+                left: 20px;
+                border: none;
+                color: white;
+                background-color:rgb(2, 47, 2);
+                transform: color,background-color,border 1s ;
         }
-        .btnSec #clrBtn{
-            margin-left: 273px;
+        #sbtn:hover{
+                color: green;
+                background-color: rgb(14, 244, 14);
+                border: 3px solid rgb(2, 47, 2);
         }
-        .btn:hover{
-            color: red;
-            
+        .fbackform h1{
+                font-family:cursive;
+        }
+        #fbi{
+                background-color: rgba(255, 255, 255, 0.295);
+                margin-left: 250px;
+                font-size: 20px;
+                font-family: cursive;
         }
     </style>
 </head>
-<body>
-    <form action="">
-        <div class="form1">
-            <h1>Step 1: Your details</h1>
-            <div class="box" id="box1">
-                <label for="name">Name</label>
-                <input type="text" name="name" placeholder="First and last name">
-            </div>
-            <div class="box">
-                <label for="email">Email</label>
-                <input type="email" name="email" placeholder="example@domain.com" id="">
-            </div>
-            <div class="box">
-                <label for="phone">Phone</label>
-                <input type="number" name="phone" placeholder="Eg. +91 9870000009">
-            </div>
-            <h1>Step 2: Delivery address</h1>
-            <div class="box" id="box4">
-                <div><label for="address">Address</label></div>
-                <div><textarea name="address" id="add" cols="30" rows="5"></textarea></div>
-            </div>
-            <div class="box">
-                <label for="Pin">Post code</label>
-                <input type="number" name="pin" id="">
-            </div>
-            <div class="box">
-                <label for="country">Country</label>
-                <select name="country" id="">
-                    <option value="Ind">India</option>
-                    <option value="Jap">Japan</option>
-                    <option value="Kr">Korea</option>
-                    <option value="Ch">China</option>
-                    <option value="Rus">Russia</option>
-                </select>
-            </div>
-            <h1>Step 3: Card details</h1>
-            <div class="box" id="box7">
-                <div><label for="cardType">Card type</label></div>
-                <div>
-                    <input class="radioBtn" type="radio" name="cardType"> <label class="radioLbl" for="cardType">VISA</label>
-                    <input class="radioBtn" type="radio" name="cardType"> <label class="radioLbl" for="cardType">AmEx</label>
-                    <input class="radioBtn" type="radio" name="cardType"> <label class="radioLbl" for="cardType">Mastercard</label>
-                </div>
 
-            </div>
-            <div class="box" id="box8">
-                <label for="cardno.">Card number</label>
-                <input type="text">
-            </div>
-            <div class="box" id="box9">
-                <label for="cardpin">Security code</label>
-                <input type="number" name="" id="">
-            </div>
-            <div class="box" id="box10">
-                <label for="nameOnCard">Name on card</label>
-                <input type="text" name="nameOnCard" id="">
-            </div>
-            <div class="btnSec">
-                <button id="clrBtn" class="btn" type="reset">Clear All</button>
-                <button id="subBtn" class="btn" type="submit">Submit</button>
-            </div>
+<body></body>
+    <div class="sform">
+        <h1 id="fhead">Joining Form</h1>
+        <div class="box box1">
+                <label for="name">Name</label>
+                <input type="text" id="name">        
         </div>
-    </form>
+        <div class="box box2">
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender" id="male"><label for="male">Male</label>
+                <input type="radio" name="gender" id="female"><label for="female">Female</label>
+        </div>
+        <div class="box box3">
+                <label for="mail">Email</label>
+                <input type="email" id="mail">
+        </div>
+        <div class="box box4">
+                <label for="pass">password</label>
+                <input type="password" name="" id="pass">
+        </div>
+        <div class="box box5">
+                <label for="cno">Contact Number</label>
+                <input type="number" name="" id="cno">
+        </div>
+        <div class="box box6">
+                <label for="cbox">Avilable resources</label>
+                <input type="checkbox" name="cbox" id="wifi"><label for="wifi">Internet connection</label>
+                <input type="checkbox" name="cbox" id="os"><label for="os">Operating system</label>
+                <input type="checkbox" name="cbox" id="car"><label for="car">Vehicle</label>
+        </div>
+        <div class="box box7">
+                <label for="color">Colour Prefered</label>
+                <input type="color" id="color">
+        </div>
+        
+        
+        
+        <div class="box box8">
+                <label for="price">Highest Bid</label>
+                <input type="range" name="" id="price">
+        </div>
+        <div class="box box9">
+                <label for="resume">Upload Your Latest Resume</label>
+                <input type="file" id="resume">
+        </div>
+        
+        
+        
+        <div class="box box10">
+                <label for="jdate">Date of performance</label>
+                <input type="date" name="" id="jdate">
+        </div>
+        <div class="box box11">
+                <label for="sweek">Week of shipment</label>
+                <input type="week" name="" id="sweek">
+        </div>
+        <div class="box box12">
+                <label for="mnth">Month of return</label>
+                <input type="month" name="" id="mnth">
+        </div> 
+        <div class="b2box">
+                <div class="box box13">
+                        <label for="searchid">Forget password? search now!</label>
+                        <input type="search" name="" id="" placeholder="username / contact" >
+                
+                </div>
+                <div class="box box14">
+                        Existing user ! 
+                        <input type="button" value="Login">
+                </div>
+        </div>
+        <div class="box box15">
+                <button id="rbtn" type="reset">Clear All</button>
+                <button id="sbtn" type="submit">Submit</button>
+        </div>
+        
+        <div class="fbackform">
+                <h1>Any Suggestion</h1>
+                <textarea placeholder="Write your feedback here :)" id="fbi" cols="52" rows="6"></textarea>
+        </div>
+</div>
+    
 </body>
+
 </html>
+
+
+
+
